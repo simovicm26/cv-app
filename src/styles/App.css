@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  color: rgb(175, 18, 18);
+  color: rgb(175, 18, 18);
+}
+
+.app {
+  width: 1300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 0 auto;
+}
+
+.info {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0;
+}
+
+.education {
+  grid-column: 2 / 4;
+  grid-row: 1 / 2;
+  background-color: rgb(190, 49, 49);
+  padding: 25px 50px;
+}
+
+.practical {
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+  background-color: rgb(190, 49, 49);
+  padding: 25px 50px;
+}
+
+.portrait {
+  width: 250px;
+  height: 250px;
+  background-image: url("../img/portrait.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 100%;
+  border: 5px solid rgb(175, 18, 18);
+}
+
+h1 {
+  font-size: 80px;
+
+  line-height: 75px;
+  text-align: center;
+}
+
+h3 {
+  color: white;
+}
+
+.info-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+}
+
+.info-edit {
+  display: flex;
+  align-items: center;
+}
+
+.info-edit h3 {
+  margin-right: 10px;
+}
+
+p {
+  color: white;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  font-size: 16px;
+}
+
+.edit-icon:hover {
+  background-color: rgb(175, 18, 18);
+}
+
+.education-edit {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.education-edit img:hover,
+.form-list img:hover {
+  background-color: rgb(175, 18, 18);
+}
+
+.form-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.edu-item {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 30px 0;
+}
+
+.edu-item p:nth-child(2) {
+  grid-row: 1 /3;
+  grid-column: 2/3;
+  align-self: center;
+}
+
+.edu-item img {
+  grid-row: 1 /3;
+  grid-column: 3/4;
+  align-self: center;
+}
+
+.edu-item p,
+.edu-item h3 {
+  padding: 0;
+  margin: 0;
+}
